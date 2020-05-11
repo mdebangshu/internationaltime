@@ -11,11 +11,11 @@ import com.lightweight.internationaltime.repositories.CountryValidatorRepository
 @Service
 public class CountryValidatorService {
 
-    @Autowired
-    private CountryValidatorRepository repository;
-    
-    public String getValidity(String id) {
-    	Optional<CountryValidator> result =repository.findById(id);
-    	return result.isPresent() ? result.get().getValidity() : "";
-    }
+	@Autowired
+	private CountryValidatorRepository repository;
+
+	public String getValidity(String id) {
+		Optional<CountryValidator> result = repository.findById(id);
+		return result.isPresent() ? result.get().getValidity() : "";
+	}
 }
