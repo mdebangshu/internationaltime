@@ -8,7 +8,7 @@ import com.lightweight.internationaltime.model.WorldTime;
 
 @Service
 public class WorldTimeService {
-
+	
 	@Autowired
 	private WorldTimeAdapter worldTimeAdapter;
 	
