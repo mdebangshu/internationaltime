@@ -17,9 +17,9 @@ public class WorldTimeAdapter {
 	@Autowired
 	private RestTemplate restTemplate;
 
-	public WorldTime getWorldTime(String county) {
+	public WorldTime getWorldTime(String country) {
 		ResponseEntity<WorldTime> responseEntity = restTemplate
-				.getForEntity(gatewayUrl + county, WorldTime.class);
+				.getForEntity(gatewayUrl + country, WorldTime.class);
 		return responseEntity.getBody();
 	}
 }
